@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Weather App</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+   
+ </head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <body>
+    <style>
+
+      body{
+        background-color: #FFDEE9;
+        background-image: linear-gradient(10deg, #FFDEE9 40%, #B5FFFC 100%);
+
+       .navbar{
+        background-color: #74EBD5;
+        background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+
+       }
+
+
+      }
+    </style>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">WEATHER FORECASTING</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About the App</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   REGION
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">USA</a></li>
+                  <li><a class="dropdown-item" href="#">EUROPE</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">ASIA</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Return to Home</a>
+              </li>
+            </ul>
+            
+
+
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+         
+         
+
+      <div class="container">
+
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 fw-normal text-body-emphasis">WEATHER</h1>
+            <p class="fs-5 text-body-secondary">Quickly View detailed Weather report of your area</p>
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                <div class="card-header py-3 text-bg-primary border-primary">
+                  <h4 class="my-0 fw-normal">NEW DELHI <i class='fas fa-map-marker-alt' style='font-size:36px'></i></h4>
+                </div>
+                <div class="card-body">
+                    
+                    <i class='fas fa-sun yellow-color' style='font-size:56px'></i>
+
+                  <h1 class="card-title pricing-card-title">
+                   35 <span style='font-size:40px;'>&#8451;</span>
+                </h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>Temperature <i class='fas fa-temperature-high' style='font-size:36px'></i></li>
+                    <li>Humidity <i class='fas fa-smog' style='font-size:28px' margin-bottom:2px></i> </li>
+                    <li>Wind Speed <i class='fas fa-wind' style='font-size:36px'></i></li>
+                    <li>Pressure <i class='fas fa-water' style='font-size:36px'></i></li>
+                  </ul>
+                  <a href="https://www.accuweather.com/en/in/delhi/202396/weather-forecast/202396">
+                  <button class="w-100 btn btn-lg btn-outline-primary">Detailed weather report </button>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                <div class="card-header py-3 text-bg-primary border-primary">
+                    <h4 class="my-0 fw-normal">Banglore <i class='fas fa-map-marker-alt' style='font-size:36px' ></i></h4>
+                </div>
+                <div class="card-body">
+                    
+                    <i class='fas fa-cloud-sun yellow-color' style='font-size:56px'></i>
+
+                  <h1 class="card-title pricing-card-title">
+                   32<span style='font-size:40px;'>&#8451;</span>
+                </h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>Temperature <i class='fas fa-temperature-high' style='font-size:36px'></i></li>
+                    <li>Humidity <i class='fas fa-smog' style='font-size:28px' margin-bottom:2px></i> </li>
+                    <li>Wind Speed <i class='fas fa-wind' style='font-size:36px'></i></li>
+                    <li>Pressure <i class='fas fa-water' style='font-size:36px'></i></li>
+                  </ul>
+                  <a href="https://www.accuweather.com/en/in/bengaluru/204108/weather-forecast/204108">
+
+                  <button type="button" class="w-100 btn btn-lg btn-outline-primary">Detailed weather report
+                    
+                  </button>
+                  </a>
+
+                </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div class="card-header py-3 text-bg-primary border-primary">
+                <h4 class="my-0 fw-normal">Dehradun <i class='fas fa-map-marker-alt' style='font-size:36px'></i></h4>
+              </div>
+              <div class="card-body">
+                    
+                <i class='fas fa-cloud-sun-rain yellow-color' style='font-size:56px'></i>
+
+              <h1 class="card-title pricing-card-title">
+               29 <span style='font-size:40px;'>&#8451;</span>
+            </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Temperature <i class='fas fa-temperature-high' style='font-size:36px'></i></li>
+                <li>Humidity <i class='fas fa-smog' style='font-size:28px' margin-bottom:2px></i> </li>
+                <li>Wind Speed <i class='fas fa-wind' style='font-size:36px'></i></li>
+                <li>Pressure <i class='fas fa-water' style='font-size:36px'></i></li>
+              </ul>
+
+              <a href="https://www.accuweather.com/en/in/dehradun/191339/weather-forecast/191339">
+              <button type="button" class="w-100 btn btn-lg btn-outline-primary">Detailed weather report</button>
+              </a>
+              
+            </div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+            </body>
+          </section>
+
+
+
+          
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    <script>
+      const apiKey ="c05624637f2c3368627c698d87a5f8a7";
+      const apiUrl ="https://api.openweathermap.org/data/2.5/weather?q=&units=metric";
+
+
+    </script>
+
+</body> 
+</html>
