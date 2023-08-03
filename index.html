@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Weather App</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
    
  </head>
@@ -12,11 +14,12 @@
 
   <body>
     <style>
+      @import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700");
 
       body{
         background-color: #FFDEE9;
         background-image: linear-gradient(10deg, #FFDEE9 40%, #B5FFFC 100%);
-      }
+        } 
 
        .navbar{
         background-color: #74EBD5;
@@ -77,10 +80,11 @@
         border-bottom-left-radius: var(--radius);
         border-bottom-right-radius: var(--radius);
       }
-       
+
 
       
-    </style>
+
+  </style>
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -122,19 +126,65 @@
         </div>
       </nav>
          
-         
+      <div class="parent" style="text-align:center; margin-top:5px;">
+       
+        <button id="sun-button">&#9728;</button>
+            <div id="sun-popup" class="popup">
+              <div class="sun"></div>
+            </div>
+        
+        <button id="wind-button">&#9752;</button>
+            <div id="wind-popup" class="popup">
+              <div class="wind"></div>
+            </div> 
 
-      <div class="container">
+        <button id="cloud-button">&#9729;</button>
+              <div id="cloud-popup" class="popup">
+               <div class="cloud"></div>
+              </div>
+
+
+        <button id="thunder-button">&#9731;</button>
+          <div id="thunder-popup" class="popup">
+            <div class="thunder"></div>
+          </div>
+
+        <button id="rain-button">&#9730;</button>
+        <div id="rain-popup" class="popup">
+          <div class="rain"></div>
+        </div>
+
+
+        <button id="rainbow-button">&#9752;</button>
+        <div id="rainbow-popup" class="popup">
+          <div class="rainbow">
+            <div class="arc arc-1"></div>
+            <div class="arc arc-2"></div>
+            <div class="arc arc-3"></div>
+            <div class="arc arc-4"></div>
+            <div class="arc arc-5"></div>
+            <div class="arc arc-6"></div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+      <div class="container" style="margin-top:-30px;">
 
         <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
             <h1 class="display-4 fw-normal text-body-emphasis">WEATHER</h1>
             <p class="fs-5 text-body-secondary">Quickly View detailed Weather report of your area</p>
-          </div>
-          <div class="buttons-container" style="text-align:center; margin-bottom: 40px;">
+        </div>
+
+          
+          <div class="buttons-container" style="text-align:center; margin-bottom:20px; margin-top:5px;">
           <a href="home.html">
             <button class="button-arounder">Click for your city/country forecasts</button>
           </a>
           </div>
+
+    
 
           <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
             <div class="col">
@@ -228,13 +278,6 @@
       </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-
-    <script>
-      const apiKey ="c05624637f2c3368627c698d87a5f8a7";
-      const apiUrl ="https://api.openweathermap.org/data/2.5/weather?q=&units=metric";
-
-
-    </script>
 
 </body> 
 </html>
